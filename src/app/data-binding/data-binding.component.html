@@ -1,0 +1,19 @@
+<!--Data Binding Topics
+Two types of Binding 
+1.One Way Binding
+2.Two Way Binding
+3.Event Binding-->
+<h1>{{name}}</h1>
+<br>
+<input type="text" [(ngModel)]='name'>
+<h1>{{getTitle()}}</h1>
+<p> 100 x 80 = {{100*80}}</p>
+<h1>Largest Number : {{getMax(100,150)}}</h1>
+<h2 style.color="{{color}}">The Angular is red in colour</h2>
+<button [disabled]="isDisabled">Click Me</button>
+<p [innerText]="'Welcome to'+' Angular'"></p>
+<button (click)="clickMe()">Click Me!</button>
+<p>You Have clicked {{clickCount}}</p>
+Type Something: <input type="text" (input)="handleInput($event);value1=$any($event.target).value">
+<p>With HandleInput:{{value}}</p>
+<p>Without HandleInput:{{value1}}</p>

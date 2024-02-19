@@ -1,0 +1,69 @@
+<!---ngClass and ngFor-It is used to create a table and list of the data.
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1>{{title}}</h1>
+        <br>
+        <hr>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Cast</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr 
+                    [ngClass]='{"bg-warning":f,"bg-info":l}'
+                    *ngFor="let movie of movies;let i = index, let e=even,let o=odd,let f=first,let l=last">
+                    <td>{{i+1}}</td>
+                    <td>{{movie.title}}</td>
+                    <td>{{movie.Director}}</td>
+                    <td>{{movie.Cast}}</td>
+                    <td>{{movie.ReleaseDate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>-->
+
+
+<!--ngSwitch is used to find the Switch case statement
+<label for="">Type num</label>
+<input type="text" [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">Two</div>
+    <div *ngSwitchCase="3">Three</div> 
+    <div *ngSwitchCase="4">Four</div>
+</div> -->
+
+
+<!--ngIf is used to condition of statement whether true or false
+<h1>ngIf Example</h1>
+<div class="row">
+    <label for="">Check Box <input type="checkbox" [(ngModel)]="ShowMe"></label>
+</div>
+<p *ngIf="ShowMe;  then thenblock else elseBlock"></p>
+<ng-template #thenblock>
+    <p>Show Me is Checked</p>
+</ng-template>
+
+<ng-template #elseBlock>
+<p>Show Me is Unchecked</p>
+</ng-template>-->
+
+<!--Attribute Directives
+ngClass-It is used to create a css class component to add a class function using two way binding model-->
+Red<input type="checkbox" [(ngModel)]="enableRed">
+Big<input type="checkbox" [(ngModel)]="enableBig">
+Itallic<input type="checkbox" [(ngModel)]="enableItallic">
+<div [ngClass]="{'primary':enableRed,'big':enableBig,'italics':enableItallic}">
+    Angular Learning
+</div>
