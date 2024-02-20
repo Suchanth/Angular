@@ -1,0 +1,11 @@
+<app-forms (carAdded)="carData($event)"></app-forms>
+<h2>List Components</h2>
+<div *ngIf="cars.length>0;then thenblock;else elseblock"></div> 
+<ng-template #thenblock>
+<ul>
+    <li *ngFor="let carName of cars">{{carName}}</li>
+</ul>
+</ng-template>
+<ng-template #elseblock>
+    <h3>No Car Name is Available</h3>
+</ng-template>

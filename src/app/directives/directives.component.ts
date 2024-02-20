@@ -5,6 +5,7 @@ import { NgSwitchCase } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { NgClass } from '@angular/common';
 import { NgFor } from '@angular/common';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-directives',
@@ -16,6 +17,7 @@ import { NgFor } from '@angular/common';
     NgIf,
     NgFor,
     NgClass,
+    NgStyle,
   ],
   templateUrl: './directives.component.html',
   styleUrl: './directives.component.css'
@@ -30,7 +32,9 @@ export class DirectivesComponent {
 //   ]
   //num = 0;
   //ShowMe=true;
-   enableRed=true;
-   enableBig=true;
-   enableItallic=true;
+  //  enableRed=true;
+  //  enableBig=true;
+  //  enableItallic=true;
+  //status = "error";
+  //color="blue";
 }

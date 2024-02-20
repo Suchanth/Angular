@@ -61,9 +61,22 @@
 
 <!--Attribute Directives
 ngClass-It is used to create a css class component to add a class function using two way binding model-->
-Red<input type="checkbox" [(ngModel)]="enableRed">
+<!-- Red<input type="checkbox" [(ngModel)]="enableRed">
 Big<input type="checkbox" [(ngModel)]="enableBig">
 Itallic<input type="checkbox" [(ngModel)]="enableItallic">
 <div [ngClass]="{'primary':enableRed,'big':enableBig,'italics':enableItallic}">
     Angular Learning
-</div>
+</div> -->
+
+<!--ngStyle-Styling the CSS component in a template view-->
+<!-- <h1 [ngStyle]="{'color':status=='success'?'green':'red'}">Sample Test</h1>
+<div [ngStyle]="{
+    'color':'purple',
+    'font-size':'50px',
+    'font-weight':'bold',
+    'text-decoration':'underlined',
+}">Programming in Angular</div>
+Color:<input type="text" [(ngModel)]="color">
+<h2 [ngStyle] = "{
+    'backgroundColor':color,
+}">Angular Programming</h2> -->

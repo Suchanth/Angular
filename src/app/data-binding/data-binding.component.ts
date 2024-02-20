@@ -11,25 +11,26 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './data-binding.component.css'
 })
 export class DataBindingComponent {
-  name="Ramesh"; 
-  title="Learning from Angular in YouTube";
-  color="red";
-  isDisabled = false;
+  // name="Ramesh"; 
+  // title="Learning from Angular in YouTube";
+  // color="red";
+  // isDisabled = false;
 
-  getTitle(){
-    return this.title;
-  }
-  getMax(first:number,second:number){
-    return Math.max(first,second);
-  }
-  clickCount = 0;
-  clickMe(){
-    this.clickCount++;
-  }
-  value= " ";
-  value1='';
-  handleInput(event:any){
-      this.value=(event.target as HTMLInputElement).value;
-  }
+  // getTitle(){
+  //   return this.title;
+  // }
+  // getMax(first:number,second:number){
+  //   return Math.max(first,second);
+  // }
+  // clickCount = 0;
+  // clickMe(){
+  //   this.clickCount++;
+  // }
+  // value= " ";
+  // value1='';
+  // handleInput(event:any){
+  //     this.value=(event.target as HTMLInputElement).value;
+  // }
+  itemimageUrl="../assets/Naruto.jpeg";
   }
 
