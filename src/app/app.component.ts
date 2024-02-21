@@ -7,6 +7,10 @@ import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { FormsComponent } from './forms/forms.component';
 import { ListComponent } from './list/list.component';
+import { BoxComponent } from './box/box.component';
+import { FormsModule } from '@angular/forms';
+import { NgIf } from '@angular/common';
+import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 
 @Component({
   selector: 'app-root',
@@ -18,12 +22,23 @@ import { ListComponent } from './list/list.component';
     //DataBindingComponent,
     //DirectivesComponent,
     //PipesComponent,
-    FormsComponent,
-    ListComponent,
+    //FormsComponent,
+    //ListComponent,,
+    BoxComponent,
+    FormsModule,
+    NgIf,
+    TemplateDrivenFormsComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'angular-practices';
+  titles:string[] = [];
+  disabledHeader=false;
+  addTitle(){
+    this.titles.push(this.title);
+    console.log(this.titles)
+  }
+
 }

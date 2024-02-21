@@ -1,0 +1,51 @@
+<div class="container">
+    <form #contactForm="ngForm" (ngSubmit)="Submit(contactForm)">
+        <p>
+        <label for="Firstname">Firstname</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter Your Firstname" ngModel>
+    </p>
+    <p>
+        <label for="Lastname">Lastname</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter Your Lastname" ngModel>
+    </p>
+    <p>
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your EmailId" ngModel>
+    </p>
+    <p>
+        <label for="Gender">Gender</label>
+        <input type="radio" value="male" id="Gender" name="Gender" ngModel>Male
+        <input type="radio" value="female" id="Gender" name="Gender" ngModel>Female
+    </p>
+    <p>
+        <label for="isSingle">Single</label>
+        <input type="checkbox" value="isSingle" id="isSingle" name="isSingle" ngModel>
+    </p>
+    <p>
+        <label for="country">Country</label>
+        <select name="country" id="country" ngModel>
+            <option value="">Select</option>
+            <option [value]="country.id" *ngFor="let country of countryList">{{country.name}}</option>
+        </select>
+    </p>
+    <div ngModelGroup="address">
+    <p>
+        <label for="city">City</label>
+        <input type="text" value="city" id="city" name="city" placeholder="Enter your City" ngModel>
+    </p>
+    <p>
+        <label for="street">Street</label>
+        <input type="text" value="street" id="street" name="street" placeholder="Enter your Street" ngModel>
+    </p>
+    <p>
+        <label for="pincode">Pincode</label>
+        <input type="text" value="pincode" id="pincode" name="pincode" placeholder="Enter your Pincode" ngModel>
+    </p>
+
+    <p>
+        <button type="Submit">Submit</button>
+    </p>
+    </div>
+    </form>    
+</div>
+
