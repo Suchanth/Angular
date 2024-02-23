@@ -8,10 +8,10 @@ import { PipesComponent } from './pipes/pipes.component';
 import { FormsComponent } from './forms/forms.component';
 import { ListComponent } from './list/list.component';
 import { BoxComponent } from './box/box.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
-
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -24,10 +24,12 @@ import { TemplateDrivenFormsComponent } from './template-driven-forms/template-d
     //PipesComponent,
     //FormsComponent,
     //ListComponent,,
-    BoxComponent,
+    // BoxComponent,
     FormsModule,
+    //ReactiveFormsModule,
     NgIf,
-    TemplateDrivenFormsComponent,
+   //TemplateDrivenFormsComponent,
+   ReactiveFormsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

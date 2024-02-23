@@ -26,19 +26,6 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color:black;
-}
-
 @media (max-width: 768px) {
     .container {
         width: auto;
@@ -55,8 +42,7 @@ button[type="submit"]:hover {
     form p,
     label,
     input,
-    select,
-    button {
+    select {
         width: auto;
     }
 }
