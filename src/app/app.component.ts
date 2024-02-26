@@ -8,10 +8,14 @@ import { PipesComponent } from './pipes/pipes.component';
 import { FormsComponent } from './forms/forms.component';
 import { ListComponent } from './list/list.component';
 import { BoxComponent } from './box/box.component';
-import { FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { UsersListsComponent } from './users-lists/users-lists.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmployeeInfoComponent } from './employee-info/employee-info.component';
+import { EmpDataComponent } from './emp-data/emp-data.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -27,9 +31,14 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
     // BoxComponent,
     FormsModule,
     //ReactiveFormsModule,
-    NgIf,
+    //NgIf,
    //TemplateDrivenFormsComponent,
-   ReactiveFormsComponent,
+   //ReactiveFormsComponent,
+  //  UsersListsComponent,
+  //  HttpClientModule,
+  //EmployeeInfoComponent,
+    EmpDataComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
